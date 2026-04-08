@@ -16,7 +16,7 @@ java {
 }
 
 application {
-    mainClass = 'app.javaJostle.App'
+    mainClass = 'app.background.App'
 }
 
 // Task to compile robot files automatically
@@ -24,7 +24,7 @@ task compileRobots {
     description = "Compile all classes that extend the Robot class"
     
     doLast {
-        File sourceDir = file('src/main/java/app/javaJostle')
+        File sourceDir = file('src/main/java/app/robots')
         File outputDir = file('src/main/resources/robots')
 
         outputDir.mkdirs()
